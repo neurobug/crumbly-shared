@@ -151,3 +151,13 @@ export const supervisorPinSchema = z.object({
 });
 
 export type SupervisorPinDto = z.infer<typeof supervisorPinSchema>;
+
+export * from './tenant-modules';
+export {
+  ORDER_STATUS_LABELS,
+  ORDER_CHANNEL_LABELS,
+  orderStatusLabel,
+  type ApiOrderStatus,
+  type OrderChannel,
+  type FulfillmentTiming,
+} from './order-labels';
